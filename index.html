@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="text" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="style/images/favicon.png">
+  <title>Yakthung adventures</title>
+  <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style/css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="style/type/icons.css">
+  <link rel="stylesheet" type="text/css" href="style/revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="style/revolution/css/layers.css">
+  <link rel="stylesheet" type="text/css" href="style/revolution/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="style/revolution/revolution-addons/filmstrip/css/revolution.addon.filmstrip.css">
+  <link rel="stylesheet" type="text/css" href="style/revolution/revolution-addons/typewriter/css/typewriter.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style/css/color/ice.css">
+  <link rel="stylesheet" href="style/css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    
+    .demos-filter {
+      margin: 0;
+      text-align: right;
+    }
+    
+    .demos-filter li {
+      list-style: none;
+      margin: 10px 0px;
+    }
+    
+    .demos-filter li a {
+      display: block;
+      border: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #444;
+    }
+    
+    .demos-filter li a:hover,
+    .demos-filter li.activeFilter a { color: #1ABC9C; }
+    
+    @media (max-width: 991px) {
+      .demos-filter { text-align: center; }
+      
+      .demos-filter li {
+        float: left;
+        width: 33.3%;
+        padding: 0 20px;
+      }
+    }
+    
+    @media (max-width: 767px) { .demos-filter li { width: 50%; } }
+    
+    #rev_slider_31_1 .uranus.tparrows {
+      width:50px;
+      height:50px;
+      background:rgba(255,255,255,0);
+    }
+    #rev_slider_31_1 .uranus.tparrows:before {
+      width:50px;
+      height:50px;
+      line-height:50px;
+      font-size:40px;
+      transition:all 0.3s;
+      -webkit-transition:all 0.3s;
+    }
+    #rev_slider_31_1 .uranus.tparrows:hover:before { opacity:0.75; }
+    .hermes .tp-bullet {
+      overflow:hidden;
+      border-radius:50%;
+      width:16px;
+      height:16px;
+      background-color:rgba(0,0,0,0);
+      box-shadow:inset 0 0 0 2px rgb(255,255,255);
+      -webkit-transition:background 0.3s ease;
+      transition:background 0.3s ease;
+      position:absolute;
+    }
+    .hermes .tp-bullet:hover { background-color:rgba(0,0,0,0.21); }
+    .hermes .tp-bullet:after {
+      content:' ';
+      position:absolute;
+      bottom:0;
+      height:0;
+      left:0;
+      width:100%;
+      background-color:rgb(255,255,255);
+      box-shadow:0 0 1px rgb(255,255,255);
+      -webkit-transition:height 0.3s ease;
+      transition:height 0.3s ease;
+    }
+    .hermes .tp-bullet.selected:after{height:100%}
+    
+  </style>
+  
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar transparent absolute nav-wrapper-light navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <img src="./style/images/files/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="navbar-hamburger ml-auto d-lg-none d-xl-none">
+            <button class="hamburger animate" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button>
+          </div>
+        </div>
+        <!-- /.navbar-header -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Destinations</a>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Nepal</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Trekking</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="package-details.html">Everest Base Camp (EBC)</a></li>
+                        <li><a class="dropdown-item" href="package-details.html">Annapurna Base Camp (ABC)</a></li>
+                        <li><a class="dropdown-item" href="package-details.html">Poonhill</a></li>
+                        <li><a class="dropdown-item" href="package-details.html">Australian Camp</a></li>
+                        <li><a class="dropdown-item  dropdown-toggle" href="#">Community Trek</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="package-details.html">Ghalegaun</a></li>
+                            <li><a class="dropdown-item" href="package-details.html">Ghandruk</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="dropdown-item  dropdown-toggle" href="#">Mustang</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="package-details.html">Upper</a></li>
+                            <li><a class="dropdown-item" href="package-details.html">Lower</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Tours</a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item dropdown"><a class="dropdown-item  dropdown-toggle" href="#">Round Tours</a>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item dropdown"><a class="dropdown-item" href="package-details.html">KTM - PKH - CHT</a></li>
+                            <li class="nav-item dropdown"><a class="dropdown-item" href="package-details.html">Eastern Nepal Tour</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">KTM-Bandipur- PKR -DHAMPUS-Australian Basecamp-PKR-KTM</a></li>
+                            <li class="nav-item dropdown"><a class="dropdown-item" href="package-details.html">KTM- Nagarkot -Panauti- Bhaktapur-KTM</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-item  dropdown-toggle" href="#">Day Tours</a>
+                          <ul class="dropdown-menu sm-nowrap">
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Kathmandu UNESCO Tour</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Helicopter Tour to Everest Base Camp</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Everest Mountain Flight</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Nagarkot Sunrise</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Changunarayan to Telkot Hike</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Patan and Bhaktapur Tour</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Food Tour</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Industry Tour (Ceramic /Painting/ Pashmina/ Carpet)</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Educational Tour (Related to subjects. eg. Agriculture Tour)</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Village Tour</a></li>
+                            <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Workshops (Cooking/carving/painting)</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Others</a>
+                      <ul class="dropdown-menu sm-nowrap">
+                        <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Festivals Offers (Dashain/ Holi/ Indrajatra/ Sakela/Lhosar/ Ubhauli Udhauli/ Yomari Punhi/ etc.)</a></li>
+                        <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Special Occasion Offers (Honeymoon/ Birthday/Anniversary etc)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">India</a>
+                  <ul class="dropdown-menu sm-nowrap">
+                    <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Rajasthan</a></li>
+                    <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Kerala</a></li>
+                    <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Nainital</a></li>
+                    <li class="nav-item dropdown"><a href="package-details.html" class="dropdown-item">Nagaland</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="dropdown-item" href="#">Bhutan</a></li>
+                <li class="nav-item dropdown"><a class="dropdown-item" href="#">Tibet</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="career.html">Work With Us</a>
+            </li>
+          </ul>
+          <!-- /.navbar-nav -->
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container --> 
+    </nav>
+    <!-- /.navbar -->
+    <div class="rev_slider_wrapper" style="background:#aaa;padding:0px;">
+      <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+      <div id="rev_slider_31_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+        <ul>	<!-- SLIDE  -->
+          <li class="dark" data-index="rs-101" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="1000"  data-thumb="include/rs-plugin/demos/assets/images/100x50_waterfal.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 50px 0px transparent">
+            <!-- MAIN IMAGE -->
+            <img src="./style/images/files/slider/lide1.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            
+            <!-- LAYER NR. 10 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-2"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['-48','-48','-48','-38']"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 14; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;text-transform:uppercase;">Trek Packages </div>
+            
+            <!-- LAYER NR. 11 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-3"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+            data-fontsize="['50','50','40','30']"
+            data-lineheight="['60','60','50','40']"
+            data-width="['none','none','480','360']"
+            data-height="none"
+            data-whitespace="['nowrap','nowrap','normal','normal']"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 3px 0;"}]'
+            data-textAlign="['inherit','inherit','center','center']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 15; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;border-color:rgba(255, 255, 255, 0);border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;">Everest Base Camp (EBC) </div>
+            
+            <!-- LAYER NR. 12 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-4"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['59','59','49','39']"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 16; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 400; color: rgba(255,255,255,100);font-family:Poppins;">Exquisite blend of thrill and beauty</div>
+          </li>
+          
+          <li class="dark" data-index="rs-102" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="1000"  data-thumb="include/rs-plugin/demos/assets/images/100x50_waterfal.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 50px 0px transparent">
+            <!-- MAIN IMAGE -->
+            <img src="./style/images/files/slider/slide2.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            
+            <!-- LAYER NR. 10 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-2"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['-48','-48','-48','-38']"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 14; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;text-transform:uppercase;">Nepal Tour </div>
+            
+            <!-- LAYER NR. 11 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-3"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+            data-fontsize="['50','50','40','30']"
+            data-lineheight="['60','60','50','40']"
+            data-width="['none','none','480','360']"
+            data-height="none"
+            data-whitespace="['nowrap','nowrap','normal','normal']"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 3px 0;"}]'
+            data-textAlign="['inherit','inherit','center','center']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 15; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;border-color:rgba(255, 255, 255, 0);border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;">Eastern Nepal Tour </div>
+            
+            <!-- LAYER NR. 12 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-4"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['59','59','49','39']"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 16; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 400; color: rgba(255,255,255,100);font-family:Poppins;">Visit the eastern hills on Nepal </div>
+          </li>
+          
+          <li class="dark" data-index="rs-103" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="1000"  data-thumb="include/rs-plugin/demos/assets/images/100x50_waterfal.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 50px 0px transparent">
+            <!-- MAIN IMAGE -->
+            <img src="./style/images/files/slider/slide3.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            
+            <!-- LAYER NR. 10 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-2"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['-48','-48','-48','-38']"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 14; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;text-transform:uppercase;">Mustang Trek</div>
+            
+            <!-- LAYER NR. 11 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-3"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+            data-fontsize="['50','50','40','30']"
+            data-lineheight="['60','60','50','40']"
+            data-width="['none','none','480','360']"
+            data-height="none"
+            data-whitespace="['nowrap','nowrap','normal','normal']"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 3px 0;"}]'
+            data-textAlign="['inherit','inherit','center','center']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 15; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;border-color:rgba(255, 255, 255, 0);border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;">Upper Mustang trek </div>
+            
+            <!-- LAYER NR. 12 -->
+            <div class="tp-caption   tp-resizeme"
+            id="slide-101-layer-4"
+            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['59','59','49','39']"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            
+            data-type="text"
+            data-responsive_offset="on"
+            
+            data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            
+            style="z-index: 16; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 400; color: rgba(255,255,255,100);font-family:Poppins;">Trek along one of the most remote places in Nepal</div>
+          </li>
+        </ul>
+        <div class="tp-bannertimer" style="height: 10px; background: rgba(255,255,255,0.25);"></div>	</div>
+      </div><!-- END REVOLUTION SLIDER -->
+      <!-- /.rev_slider_wrapper -->
+      
+      <div class="wrapper about-wrapper" style="background-image: url('./style/images/files/pattern1.png');">
+        <div class="image-block-wrapper">
+          <!--/.image-block -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+                <div class="box">
+                  <h3 class="heading" data-aos="fade-up">We are Yakthung Adventures</h3>
+                  <div class="space10"></div>
+                  <p class="lead2" data-aos="fade-up">Yakthung Adventure Pvt. Ltd is a private travel company run by 20 years of experienced Tourism personalities. The main aim of our company is to meet the customers expectations by providing the best services. Responsible Tourism is the main focus by considering eco-friendly, community development and sustainability. </p>
+                  <div class="space20"></div>
+                  <a href="about.html" class="btn btn-rounded btn-s" data-aos="fade-up">Learn More</a>
+                  <div class="space20"></div>
+                </div>
+                <!--/.box --> 
+              </div>
+              <!--/column --> 
+            </div>
+            <!--/.row --> 
+          </div>
+          <!--/.container-fluid --> 
+        </div>
+        <!--/.image-block-wrapper --> 
+      </div>
+    
+      <section class="ftco-section">
+        <div class="container-fluid nopadding">
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-1.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-2.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-3.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-4.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-5.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-6.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-7.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="block-5" style="background-image: url('./style/images/files/tour-8.jpg');">
+                        <div class="text">
+                            <h3 class="heading">Group Tour in Maldives</h3>
+                            <div class="post-meta">
+                                <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Featured Tours -->
+     <div class="wrapper bg-alternate">
+      <div class="container inner">
+        <h2 class="section-title section-title-upper larger section-title-line text-center" data-aos="fade-up">Nepal Treks</h2>
+        <div class="tiles">
+          <div class="items row">
+            <div class="item col-sm-6 col-md-4">
+              <a href="#">
+                <div class="card">
+                <div class="card-image-container" style="background-image:url('./style/images/files/package-thumbs/1.jpg')">
+
+                </div>
+                
+                <div class="content">
+                  <div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>
+                  <div class="info">
+                    <span class="trip-name">Everest Base Camp Everest Base CampEverest Base Camp</span>
+                    <span class="trip-contains"><del>NRS. 5500</del></span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <!--/.item -->
+            <div class="item col-sm-6 col-md-4">
+              <a href="#">
+                <div class="card">
+                <div class="card-image-container" style="background-image:url('./style/images/files/package-thumbs/2.jpg')">
+
+                </div>
+                
+                <div class="content">
+                  <div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>
+                  <div class="info">
+                    <span class="trip-name">Everest Base Camp</span>
+                    <span class="trip-contains"><del>NRS. 5500</del></span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <!--/.item -->
+            <div class="item col-sm-6 col-md-4">
+              <a href="#">
+                <div class="card">
+                <div class="card-image-container" style="background-image:url('./style/images/files/package-thumbs/3.jpg')">
+
+                </div>
+                
+                <div class="content">
+                  <div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>
+                  <div class="info">
+                    <span class="trip-name">Everest Base Camp</span>
+                    <span class="trip-contains"><del>NRS. 5500</del></span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <!--/.item -->
+            <div class="item col-sm-6 col-md-4">
+              <a href="#">
+                <div class="card">
+                <div class="card-image-container" style="background-image:url('./style/images/files/package-thumbs/4.jpg')">
+
+                </div>
+                
+                <div class="content">
+                  <div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>
+                  <div class="info">
+                    <span class="trip-name">Everest Base Camp</span>
+                    <span class="trip-contains"><del>NRS. 5500</del></span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <!--/.item -->
+            <div class="item col-sm-6 col-md-4">
+              <a href="#">
+                <div class="card">
+                <div class="card-image-container" style="background-image:url('./style/images/files/package-thumbs/5.jpg')">
+
+                </div>
+                
+                <div class="content">
+                  <div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>
+                  <div class="info">
+                    <span class="trip-name">Everest Base Camp</span>
+                    <span class="trip-contains"><del>NRS. 5500</del></span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <!--/.item -->
+            <div class="item col-sm-6 col-md-4">
+              <a href="#">
+                <div class="card">
+                <div class="card-image-container" style="background-image:url('./style/images/files/package-thumbs/6.jpg')">
+
+                </div>
+                
+                <div class="content">
+                  <div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>
+                  <div class="info">
+                    <span class="trip-name">Everest Base Camp</span>
+                    <span class="trip-contains"><del>NRS. 5500</del></span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <!--/.item -->
+          </div>
+          <!--/.row --> 
+        </div>
+      </div>
+    </div>
+
+      
+      <div class="wrapper">
+        <div class="container inner pt-120 pb-120">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./style/images/files/packages/big/1534317923vent2.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-6 pt-64 pt-xs-16">
+              <h2 class="section-title mb-20 text-left" data-aos="fade-up">Make Your Own Trip</h2>
+              <p class="lead2" data-aos="fade-up">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <a href="#" class="btn btn-border btn-s btn-rounded" data-aos="fade-up">Book Custom Package</a>
+            </div>
+            <!-- /column --> 
+          </div>
+          <!-- /.row --> 
+        </div>
+        <!-- /.container --> 
+      </div>
+      <!-- /.wrapper -->
+
+      <!-- Featured Tours -->
+      <div class="wrapper light-wrapper custom-pattern">
+        <div class="container inner">
+          <h2 class="section-title section-title-upper larger section-title-line text-center">Nepal Tours</h2>
+          <div class="tiles">
+            <div class="items row">
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to1.jpg" alt=""></span> 
+                    <!--<figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">KTM - PKR - CHT <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>-->
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <!--<div class="date">
+                    <span class="numeric">NRs.</span>
+                    <span class="month">4500</span>
+                  </div>-->
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">KTM - PKR - CHT</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <!--<span class="trip-contains"><del>NRS. 1800</del></span>-->
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                        <!--<span class="trip-contains"><del>NRs. 1800</del></span>-->
+                        <!--<h6 class="numeric">NRs. 1450</h6>-->
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                        <!--<h6 class="numeric">20 Days</h6>-->
+                      </div>
+                      <!--<div class="d-flex flex-column">
+                        <p class="mb-0">Destination</p>
+                        <h6 class="numeric">Nepal</h6>
+                      </div>-->
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/10.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Eastern Nepal Tour</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/11.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Australian Basecamp-PKR-KTM</a></span>
+                    <span class="trip-contains mt-1">Australia</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to4.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Kathmandu Unseco Tour</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to2.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Everst Mountain Flight</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to3.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Nagarkot Sunrise</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to6.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Kathmandu Fopod Tour</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <div class="item col-sm-6 col-md-3 rounded px-1 custom-card" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to7.jpg" alt=""></span> 
+                  </figure>
+                </a>
+                <div class="content mb-3">
+                  <div class="info px-2">
+                    <span class="trip-name"><a href="package-details.html">Village Tour</a></span>
+                    <span class="trip-contains mt-1">Nepal</span>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex flex-column">
+                        <p class="mb-0"><i class="fa fa-usd"></i> <del class="trip-contains custom-text" style="display: inline-block;">NRs. 1600</del> NRs. 1450</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="mb-0"><i class="fa fa-clock-o"></i>&emsp;20 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.item -->
+
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/10.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Eastern Nepal Tour<span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/11.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">KTM-Bandipur- PKR -DHAMPUS-Australian Basecamp-PKR-KTM <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to4.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Kathmandu Unseco Tour<span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to2.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Everest Mountain Flight <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to3.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Nagarkot Sunrise <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to6.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Kathmandu Fopod Tour <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+              <!--<div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/to7.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Village Tour <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+            </div>
+            <!--/.row --> 
+          </div>
+        </div>
+      </div>
+      
+      <!-- Featured Tours -->
+      <div class="wrapper light-wrapper custom-pattern">
+        <div class="container inner">
+          <h2 class="section-title section-title-upper larger section-title-line text-center">Other Destinations</h2>
+          <div class="tiles">
+            <div class="items row">
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/raj.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Rajasthan -India<span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/ker.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Kerala - India<span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/nain.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Nainital - India <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/naga.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Nagaland - India <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/bhutan.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Bhutan <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/tibet.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Tibet <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item -->
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/holi.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Festival Offers<span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+              <div class="item col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
+                <a href="package-details.html">
+                  <figure class="overlay overlay4 rounded"><span><span class="bg"></span><img src="style/images/files/package-thumbs/hon.jpg" alt=""></span> 
+                    <figcaption class="d-flex">
+                      <div class="align-self-end mx-auto">
+                        <h4 class="mb-0">Special Occasion Offers <span class="raleway">NRs. 1450</span></h4>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--/.item --> 
+            </div>
+            <!--/.row --> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="wrapper light-wrapper">
+        <div class="container footer-before inner">
+          <h2 class="section-title section-title-upper larger section-title-line text-center" data-aos="fade-up">Want To Talk To Us ?</h2>
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="form-container" data-aos="fade-up">
+                <form action="contact/vanilla-form.php" method="post" class="vanilla vanilla-form" novalidate="" data-vf-id="f41ea52f-4f0d-83d8-58c1-8388d8382540">
+                  <div class="row text-center">
+                    <div class="col-md-6 pr-10">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Your name" required="required">
+                      </div>
+                      <!--/.form-group --> 
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 pl-10">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your e-mail" required="required">
+                      </div>
+                      <!--/.form-group --> 
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 pr-10">
+                      <div class="form-group">
+                        <input type="tel" class="form-control" name="tel" placeholder="Phone">
+                      </div>
+                      <!--/.form-group --> 
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 pl-10">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject">
+                      </div>
+                      <!--/.form-group --> 
+                    </div>
+                    <!--/column -->
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="3" placeholder="Type your message here..." required=""></textarea>
+                      <div class="space20"></div>
+                      <button type="submit" class="btn btn-full-rounded state-initial" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!" data-initial="" value="">Submit</button>
+                      <footer class="notification-box"></footer>
+                    </div>
+                    <!--/column --> 
+                  </div>
+                  <!--/.row -->
+                </form>
+                <!--/.vanilla-form --> 
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <ul class="icon-list custom-list text-left">
+                <li class="" data-aos="fade-up"><i class="fa fa-map"></i>Moonshine St. 14/05 Light City</li>
+                <li class="" data-aos="fade-up"><i class="fa fa-envelope"></i><a href="mailto:yakthung080ffcial@gmail.com" class="nocolor">yakthung080ffcial@gmail.com</a></li>
+                <li class="" data-aos="fade-up"><i class="fa fa-phone-square"></i><a href="tel:+977 9869389574" class="nocolor">977 9869389574</a></li>
+              </ul>
+              <br>
+              <ul class="social social-mute social-m">
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a href="https://www.facebook.com/yak.thung.583" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a href="https://wwvv.instagram com/yakthung08/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li >
+                <li data-aos="fade-up" data-aos-delay="400">
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="dark-wrapper">
+        <div class="container inner pt-60 pb-60">
+          <div class="row">
+            <div class="col-md-12 col-lg-3 text-center text-lg-left">
+              <div class="widget"> <img src="./style/images/files/logo.png" alt="" />
+                <div class="space20"></div>
+                <ul class="social social-mute social-m text-left">
+                  <li>
+                    <a href="https://www.facebook.com/yak.thung.583" target="_blank"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://wwvv.instagram com/yakthung08/" target="_blank"><i class="fa fa-instagram"></i></a>
+                  </li >
+                  <li>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.widget --> 
+            </div>
+            <!-- /column -->
+            <div class="space30 d-lg-none d-xl-none"></div>
+            <div class="col-md-4 col-lg-2 offset-lg-3">
+              <div class="widget">
+                <h5 class="widget-title">Learn More</h5>
+                <ul class="list-unstyled">
+                  <ul class="list-unstyled">
+                    <li><a href="about.html" class="nocolor">About Us</a></li>
+                    <li><a href="story.html" class="nocolor">Our Story</a></li>
+                    <li><a href="toc.html" class="nocolor">Terms & Conditions</a></li>
+                    <li><a href="policy.html" class="nocolor">Our Policies</a></li>
+                  </ul>
+                </ul>
+              </div>
+              <!-- /.widget --> 
+            </div>
+            <!-- /column -->
+            <div class="col-md-4 col-lg-2">
+              <div class="widget">
+                <h5 class="widget-title">Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li><a href="packages.html" class="nocolor">Nepal Treks</a></li>
+                  <li><a href="packages.html" class="nocolor">Nepal Tours</a></li>
+                  <li><a href="packages.html" class="nocolor">Other Destinations</a></li>
+                  <li><a href="custom-package.html" class="nocolor">Custom Package</a></li>
+                </ul>
+              </div>
+              <!-- /.widget --> 
+            </div>
+            <!-- /column -->
+            <div class="col-md-4 col-lg-2">
+              <div class="widget">
+                <h5 class="widget-title">Contact</h5>
+                <address class="mb-0">
+                  Moonshine St. 14/05 Light City
+                </address>
+                <a href="mailto:first.last@email.com" class="nocolor">first.last@email.com</a><br />
+                +00 (123) 456 78 90 </div>
+                <!-- /.widget --> 
+              </div>
+              <!-- /column --> 
+            </div>
+            <!-- /.row --> 
+          </div>
+          <!-- /.container -->
+          <div class="sub-footer dark-wrapper inverse-text">
+            <div class="container inner pt-10 pb-10">
+              <div class="row">
+                <div class="col-sm-6 text-md-left text-cener">
+                  <p>© 2020 Yakthung Travels.</p>
+                </div>
+                <div class="col-sm-6 text-md-right text-cener">
+                  <p>Coded with <i class="fa fa-heart"></i> by <a href="#">KTMRush</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- /.container --> 
+          </div>
+          <!-- /.sub-footer --> 
+        </footer>
+      </div>
+      <div class="left-floater">
+        <a href="tel:+977 9869389574" class="floater call">
+          <span>Call Us</span>
+          <i class="fa fa-phone"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=9779869389574" target="_blank" class="floater whatsapp">
+          <span>WhatsApp Us</span>
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="mailto:yakthung080ffcial@gmail.com" class="floater email">
+          <span>Email Us</span>
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+      <!-- /.content-wrapper --> 
+      <script src="style/js/jquery.min.js"></script> 
+      <script src="style/js/popper.min.js"></script> 
+      <script src="style/js/bootstrap.min.js"></script> 
+      <script src="style/revolution/js/jquery.themepunch.tools.min.js"></script> 
+      <script src="style/revolution/js/jquery.themepunch.revolution.min.js"></script> 
+      <script src="style/revolution/revolution-addons/filmstrip/js/revolution.addon.filmstrip.min.js"></script> 
+      <script src="style/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js"></script>
+      <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems! The following part can be removed on Server for On Demand Loading) --> 
+      <script src="style/revolution/js/extensions/revolution.extension.actions.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.carousel.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.migration.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.navigation.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.parallax.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script> 
+      <script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>
+      <script type="text/javascript">
+        var tpj=jQuery;
+        var revapi31;
+        tpj(document).ready(function() {
+          if(tpj("#rev_slider_31_1").revolution == undefined){
+            revslider_showDoubleJqueryError("#rev_slider_31_1");
+          }else{
+            revapi31 = tpj("#rev_slider_31_1").show().revolution({
+              sliderType:"standard",
+              jsFileLocation:"include/rs-plugin/js/",
+              sliderLayout:"fullscreen",
+              dottedOverlay:"none",
+              delay:5500,
+              navigation: {
+                keyboardNavigation:"off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation:"off",
+                mouseScrollReverse:"default",
+                onHoverStop:"off",
+                arrows: {
+                  style:"uranus",
+                  enable:true,
+                  hide_onmobile:false,
+                  hide_onleave:false,
+                  tmp:'',
+                  left: {
+                    h_align:"left",
+                    v_align:"center",
+                    h_offset:20,
+                    v_offset:0
+                  },
+                  right: {
+                    h_align:"right",
+                    v_align:"center",
+                    h_offset:20,
+                    v_offset:0
+                  }
+                }
+                ,
+                bullets: {
+                  enable:true,
+                  hide_onmobile:false,
+                  style:"hermes",
+                  hide_onleave:false,
+                  direction:"horizontal",
+                  h_align:"center",
+                  v_align:"bottom",
+                  h_offset:0,
+                  v_offset:20,
+                  space:5,
+                  tmp:''
+                }
+              },
+              responsiveLevels:[1240,1024,778,480],
+              visibilityLevels:[1240,1024,778,480],
+              gridwidth:[1240,1024,778,480],
+              gridheight:[868,768,960,720],
+              lazyType:"none",
+              shadow:0,
+              spinner:"off",
+              stopLoop:"off",
+              stopAfterLoops:-1,
+              stopAtSlide:-1,
+              shuffle:"off",
+              autoHeight:"off",
+              fullScreenAutoWidth:"off",
+              fullScreenAlignForce:"off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0px",
+              hideThumbsOnMobile:"off",
+              hideSliderAtLimit:0,
+              hideCaptionAtLimit:0,
+              hideAllCaptionAtLilmit:0,
+              debugMode:false,
+              fallbacks: {
+                simplifyAll:"off",
+                nextSlideOnWindowFocus:"off",
+                disableFocusListener:false,
+              }
+            });
+          }
+          
+          revapi31.bind("revolution.slide.onloaded",function (e) {
+            setTimeout( function(){ SEMICOLON.slider.sliderParallaxDimensions(); }, 200 );
+          });
+          
+          revapi31.bind("revolution.slide.onchange",function (e,data) {
+            SEMICOLON.slider.revolutionSliderMenu();
+          });
+        });	/*ready*/
+      </script>
+      <script src="style/js/plugins.js"></script> 
+      <script src="style/js/scripts.js"></script>
+    </body>
+    </html>
